@@ -1,0 +1,337 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Loop_SDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFAudio
+import AVFoundation
+import AVKit
+import Alamofire
+import ContactsUI
+import Foundation
+@_exported import Loop_SDK
+import Lottie
+import MessageUI
+import PanModal
+import Pulsator
+import QuartzCore
+import RangeSeekSlider
+import SDWebImage
+import SafariServices
+import ScratchCardView
+import Swift
+import SwiftFortuneWheel
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TriggerLoopView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+public struct GetCustomerProfileModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GetCustomerProfileModelDataClass : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct GetCustomerProfileTier : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct UpdateProfileModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TriggerLoopSDK : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var themeData: Loop_SDK.ThemeModel?
+  @_Concurrency.MainActor(unsafe) public var delegate: (any Loop_SDK.LoopSDKDelegate)?
+  @_Concurrency.MainActor(unsafe) public var isLoggedIn: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var loginData: Loop_SDK.LoginModel?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public class Manager {
+  public init()
+  public func viewController() -> UIKit.UIViewController
+  @objc deinit
+}
+public struct Status : Swift.Codable {
+  public let code: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SpinWheelVC : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func registerCell()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Loop_SDK.SpinWheelVC : UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TriggerLoop : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func setup(theme: Loop_SDK.ThemeModel?)
+  @objc deinit
+}
+public enum ButtonShape {
+  case Sqaure, Rounded
+  public static func == (a: Loop_SDK.ButtonShape, b: Loop_SDK.ButtonShape) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CustomViewExtender : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func setup(theme: Loop_SDK.ThemeModel?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SwipeableView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func setup(theme: Loop_SDK.ThemeModel?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ThemeTextField : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func setup(theme: Loop_SDK.ThemeModel?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ThemeTextView : UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) public func setup(theme: Loop_SDK.ThemeModel?)
+  @available(iOS 7.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, textContainer: UIKit.NSTextContainer?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CustomMainView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func setup(theme: Loop_SDK.ThemeModel?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ThemeButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func setup(theme: Loop_SDK.ThemeModel?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LoopColors {
+  public class func PrimaryColor() -> UIKit.UIColor
+  public class func fontIconColor() -> UIKit.UIColor
+  public class func LeftTimeShapeColor() -> UIKit.UIColor
+  public class func BGWhite() -> UIKit.UIColor
+  public class func TriviaWrongBG() -> UIKit.UIColor
+  public class func TriviaWrongBG2() -> UIKit.UIColor
+  public class func TriviaCorrectBG() -> UIKit.UIColor
+  public class func BGGrey() -> UIKit.UIColor
+  public class func BGDarkGreen() -> UIKit.UIColor
+  public class func Black() -> UIKit.UIColor
+  public class func DarkGray() -> UIKit.UIColor
+  public class func MediumGray() -> UIKit.UIColor
+  public class func LightGray() -> UIKit.UIColor
+  public class func InfoBlue() -> UIKit.UIColor
+  public class func SuccessGreen() -> UIKit.UIColor
+  public class func ErrorRed() -> UIKit.UIColor
+  public class func ThemeOrange() -> UIKit.UIColor
+  public class func DisableSurveyColor() -> UIKit.UIColor
+  public class func rangeTextColor() -> UIKit.UIColor
+  public class func secondaryColor() -> UIKit.UIColor
+  public class func extraDelayCotainerBGColor() -> UIKit.UIColor
+  public class func extraDelayCotainerBorderColor() -> UIKit.UIColor
+  @objc deinit
+}
+extension UIKit.UIFont {
+  public static func jbs_registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ResizableView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) open var onResize: ((CoreFoundation.CGRect) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DashboardVC : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIFont {
+  public static func registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle)
+}
+@_hasMissingDesignatedInitializers public class LoopFonts {
+  public class func header900() -> UIKit.UIFont
+  public class func header800() -> UIKit.UIFont
+  public class func header700() -> UIKit.UIFont
+  public class func header600() -> UIKit.UIFont
+  public class func header500() -> UIKit.UIFont
+  public class func header400() -> UIKit.UIFont
+  public class func header300() -> UIKit.UIFont
+  public class func header200() -> UIKit.UIFont
+  public class func header100() -> UIKit.UIFont
+  public class func bodyLarge() -> UIKit.UIFont
+  public class func bodyRegular() -> UIKit.UIFont
+  public class func bodyDefault() -> UIKit.UIFont
+  public class func bodySmall() -> UIKit.UIFont
+  public class func bodySmallSemiBold() -> UIKit.UIFont
+  public class func paraDefault() -> UIKit.UIFont
+  public class func buttonLarge() -> UIKit.UIFont
+  public class func buttonDefault() -> UIKit.UIFont
+  public class func buttonLight() -> UIKit.UIFont
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TriggerView : UIKit.UIView {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var triggerBtnImage: UIKit.UIImageView!
+  @_Concurrency.MainActor(unsafe) public var viewWidth: Swift.Float
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var triggerBtnLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func setTriggerView(programaticalTriggerView: Loop_SDK.TriggerView, vc: UIKit.UIViewController, customTriggerView: Loop_SDK.TriggerView)
+  @_Concurrency.MainActor(unsafe) public func commonInit()
+  @_Concurrency.MainActor(unsafe) public func setup(theme: Loop_SDK.ThemeModel?)
+  @_Concurrency.MainActor(unsafe) public func checkIfUserLoggedIn(vc: UIKit.UIViewController, isLoggedIn: Swift.Bool, delegate: (any Loop_SDK.LoopSDKDelegate)?, loginData: Loop_SDK.LoginModel?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LoopInstance {
+  public class func getPrimaryUserID() -> Swift.Int
+  public class func savePrimaryUserID(val: Swift.Int)
+  public class func saveInstanceDetails(loopAccessKey: Swift.String, loopInstanceID: Swift.String, completion: @escaping (Loop_SDK.ThemeModel?, Swift.Int?) -> Swift.Void)
+  public class func initiateAPICall(completion: @escaping (Loop_SDK.ThemeModel?, Swift.Int?) -> Swift.Void)
+  public class func loginUser(number: Swift.String, countryCode: Swift.String, completion: @escaping (Loop_SDK.LoginModel?) -> Swift.Void)
+  public class func loginUser(email: Swift.String, completion: @escaping (Loop_SDK.LoginModel?) -> Swift.Void)
+  public class func getCustomerProfile(completion: @escaping (Loop_SDK.GetCustomerProfileModel?) -> Swift.Void)
+  public class func updateCustomerProfile(firstName: Swift.String = "", lastName: Swift.String = "", email: Swift.String = "", countryCode: Swift.String = "", mobileNumber: Swift.String = "", dob: Swift.String = "", gender: Swift.String = "", address: Swift.String = "", anniversary: Swift.String = "", primaryAddress: Swift.String = "", stateName: Swift.String = "", cityName: Swift.String = "", pinCode: Swift.String = "", secondaryAddress: Swift.String = "", completion: @escaping (Loop_SDK.UpdateProfileModel?) -> Swift.Void)
+  public class func deleteCustomer()
+  @objc deinit
+}
+public protocol LoopSDKDelegate {
+  func loginUser()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class OnboardingViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var themeData: Loop_SDK.ThemeModel?
+  @_Concurrency.MainActor(unsafe) public var delegate: (any Loop_SDK.LoopSDKDelegate)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Loop_SDK.OnboardingViewController : UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+}
+extension Loop_SDK.OnboardingViewController : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+}
+public struct ThemeModel : Swift.Codable {
+  public let status: Loop_SDK.LoopStatus?
+  public let data: Loop_SDK.ThemeDataClass?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ThemeDataClass : Swift.Codable {
+  public let instanceID: Swift.Int?, primaryUserID: Swift.Int?, isTierAdded: Swift.Int?
+  public let isReferalAdded: Swift.String?
+  public let isCurrencyAdded: Swift.Int?, isThemeAdded: Swift.Int?
+  public let brandTheme: Loop_SDK.BrandTheme?
+  public let pointsIdentifier: Loop_SDK.PointsIdentifier?
+  public let defaultCurrency: Loop_SDK.DefaultCurrency?
+  public let isSignupConsentRequired: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct DefaultCurrency : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct BrandTheme : Swift.Codable {
+  public let loyaltyProgramName: Swift.String?
+  public let themeColors: Loop_SDK.ThemeColors?
+  public let themeFont: Loop_SDK.ThemeButtons?, themeButtons: Loop_SDK.ThemeButtons?
+  public let themeShapes: Loop_SDK.ThemeShapes?
+  public let panelSpacing: Loop_SDK.PanelSpacing?
+  public let launcherMobile: Loop_SDK.Launcher?, launcherDesktop: Loop_SDK.Launcher?
+  public let launcherMobileIcon: Swift.String?, launcherDesktopIcon: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Launcher : Swift.Codable {
+  public let display: Loop_SDK.Display?, placement: Loop_SDK.Display?
+  public let label: Swift.String?
+  public let isIconDefault: Swift.Int?
+  public let defaultIconID: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Display : Swift.Codable {
+  public let id: Swift.Int?
+  public let label: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct PanelSpacing : Swift.Codable {
+  public let unit: Swift.String?, bottom: Swift.String?, side: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ThemeButtons : Swift.Codable {
+  public let id: Swift.Int?
+  public let style: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ThemeColors : Swift.Codable {
+  public let primary: Loop_SDK.FontColor?, secondary: Loop_SDK.FontColor?, fontIconColor: Loop_SDK.FontColor?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct FontColor : Swift.Codable {
+  public let hexCode: Swift.String?
+  public init(hexCode: Swift.String?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ThemeShapes : Swift.Codable {
+  public let container: Loop_SDK.ThemeButtons?, buttons: Loop_SDK.ThemeButtons?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct PointsIdentifier : Swift.Codable {
+  public let pointsLabelSingular: Swift.String?, pointsLabelPlural: Swift.String?, currencyIconPng: Swift.String?, currencyIcon: Swift.String?
+  public let isDefaultCurrencyIcon: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct LoopStatus : Swift.Codable {
+  public let code: Swift.Int?
+  public let message: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct LoginModel : Swift.Codable {
+  public let status: Loop_SDK.LoopStatus?
+  public let data: Loop_SDK.LoginDataClass?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct LoginDataClass : Swift.Codable {
+  public let id: Swift.String?, authToken: Swift.String?
+  public let instanceID: Swift.Int?
+  public let loopInstanceID: Swift.String?
+  public let isNewCustomer: Swift.Int?
+  public let instanceEnv: Swift.Int?
+  public let hasSignedUp: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension Loop_SDK.ButtonShape : Swift.Equatable {}
+extension Loop_SDK.ButtonShape : Swift.Hashable {}
