@@ -20,12 +20,12 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "Loop-SDK",
-            path: "./Sources/Loop-SDK.xcframework"),
-        .target(
-            name: "loop-sdk-package",
-            dependencies: []),
-        .testTarget(
-            name: "loop-sdk-packageTests",
-            dependencies: ["loop-sdk-package"]),
+            path: "./Sources/Loop-SDK.xcframework")
+//        .target(
+//            name: "loop-sdk-package",
+//            dependencies: []),
+//        .testTarget(
+//            name: "loop-sdk-packageTests",
+//            dependencies: ["loop-sdk-package"]),
     ]
 )
